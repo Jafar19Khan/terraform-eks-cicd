@@ -1,0 +1,11 @@
+aws_region             = "us-east-1"
+environment            = "test"
+vpc_name               = "jenkins-vpc"
+vpc_cidr               = "10.0.0.0/16"
+public_subnet_cidr     = "10.0.1.0/24"
+instance_type          = "t3.large"
+jenkins_ec2_name       = "Jenkins-Build-Server"
+jenkins_security_group = "jenkins-sg"
+# allowed_cidr and key_name are NOT stored here. Pass them on the command line:
+#   -var="allowed_cidr=$(curl -s https://checkip.amazonaws.com)/32"
+#   -var="key_name=<optional-ec2-keypair>"

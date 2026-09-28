@@ -1,0 +1,17 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+# NOTE: do NOT ignore .terraform.lock.hcl - commit it.
+
+# Secrets
+*.pem
+*.key
+.env
+*.auto.tfvars.secret
